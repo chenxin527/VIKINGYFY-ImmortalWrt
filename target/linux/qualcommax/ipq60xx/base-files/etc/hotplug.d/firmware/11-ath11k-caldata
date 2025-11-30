@@ -14,7 +14,9 @@ case "$FIRMWARE" in
 		caldata_extract "0:ART" 0x1000 0x20000
 		;;
 	anysafe,e1|\
-	cambiumnetworks,xe3-4)
+	cambiumnetworks,xe3-4|\
+	sy,y6010|\
+	philips,ly1800)
 		caldata_extract "0:ART" 0x1000 0x10000
 		;;
 	cmiot,ax18|\

@@ -111,6 +111,8 @@ ALLWIFIBOARDS:= \
 	link_nn6000 \
 	redmi_ax5 \
 	redmi_ax5-jdcloud \
+	sy_y6010 \
+	philips_ly1800 \
 	verizon_cr1000a \
 	xiaomi_ax1800 \
 	zn_m2
@@ -300,6 +302,8 @@ $(eval $(call generate-ipq-wifi-package,jdcloud_re-cs-03,JDCloud RE-CS-03))
 $(eval $(call generate-ipq-wifi-package,link_nn6000,Link NN6000))
 $(eval $(call generate-ipq-wifi-package,redmi_ax5,Redmi AX5))
 $(eval $(call generate-ipq-wifi-package,redmi_ax5-jdcloud,Redmi AX5 JDCloud))
+$(eval $(call generate-ipq-wifi-package,sy_y6010,SY Y6010))
+$(eval $(call generate-ipq-wifi-package,philips_ly1800,Philips LY1800))
 $(eval $(call generate-ipq-wifi-package,verizon_cr1000a,Verizon CR1000A))
 $(eval $(call generate-ipq-wifi-package,xiaomi_ax1800,Xiaomi AX1800))
 $(eval $(call generate-ipq-wifi-package,zn_m2,ZN M2))

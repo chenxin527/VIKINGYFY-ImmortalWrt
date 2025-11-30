@@ -362,3 +362,31 @@ define Device/jdcloud_re-cs-07
 	IMAGE/factory.bin := append-kernel | pad-to $$(KERNEL_SIZE) | append-rootfs | append-metadata
 endef
 TARGET_DEVICES += jdcloud_re-cs-07
+
+define Device/sy_y6010
+	$(call Device/FitImage)
+	$(call Device/EmmcImage)
+	DEVICE_VENDOR := SY
+	DEVICE_MODEL := Y6010
+	KERNEL_SIZE := 6144k
+	BLOCKSIZE := 128k
+	SOC := ipq6010
+	DEVICE_DTS_CONFIG := config@cp03-c1
+	DEVICE_PACKAGES := ipq-wifi-sy_y6010
+	IMAGE/factory.bin := append-kernel | pad-to $$(KERNEL_SIZE) | append-rootfs | append-metadata
+endef
+TARGET_DEVICES += sy_y6010
+
+define Device/philips_ly1800
+	$(call Device/FitImage)
+	$(call Device/EmmcImage)
+	DEVICE_VENDOR := Philips
+	DEVICE_MODEL := LY1800
+	KERNEL_SIZE := 6144k
+	BLOCKSIZE := 128k
+	SOC := ipq6010
+	DEVICE_DTS_CONFIG := config@cp01-c1
+	DEVICE_PACKAGES := ipq-wifi-philips_ly1800
+	IMAGE/factory.bin := append-kernel | pad-to $$(KERNEL_SIZE) | append-rootfs | append-metadata
+endef
+TARGET_DEVICES += philips_ly1800

@@ -100,7 +100,9 @@ platform_do_upgrade() {
 	jdcloud,re-cs-07|\
 	link,nn6000-v1|\
 	link,nn6000-v2|\
-	redmi,ax5-jdcloud)
+	redmi,ax5-jdcloud|\
+	sy,y6010|\
+	philips,ly1800)
 		CI_KERNPART="0:HLOS"
 		CI_ROOTPART="rootfs"
 		emmc_do_upgrade "$1"
