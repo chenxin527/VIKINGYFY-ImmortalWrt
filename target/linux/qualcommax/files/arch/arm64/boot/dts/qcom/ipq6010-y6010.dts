@@ -2,7 +2,7 @@
 
 /dts-v1/;
 
-#include "ipq6010-sy.dtsi"
+#include "ipq6010-philips.dtsi"
 
 / {
 	model = "SY Y6010";
