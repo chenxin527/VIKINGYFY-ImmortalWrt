@@ -6,9 +6,9 @@ PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL=$(PROJECT_GIT)/project/firmware/qca-wireless.git
-PKG_SOURCE_DATE:=2025-12-16
-PKG_SOURCE_VERSION:=10eddd6f1cbabd1972a71526d979033325f958c6
-PKG_MIRROR_HASH:=1fd55a5cf582f131a371d70de5919b7e54c6ecdc078991dd8a2d21469976c12f
+PKG_SOURCE_DATE:=2026-01-07
+PKG_SOURCE_VERSION:=11715a4fe783425625a061618e7caa5c56b03323
+PKG_MIRROR_HASH:=c8e2d70045a10350671645863bc93019629399c4ed9c211ae6071895188fb958
 PKG_FLAGS:=nonshared
 
 include $(INCLUDE_DIR)/package.mk
@@ -55,10 +55,12 @@ ALLWIFIBOARDS:= \
 	linksys_mx4200 \
 	linksys_mx5300 \
 	linksys_mx5500 \
+	linksys_mx6200 \
 	linksys_mx8500 \
 	linksys_spnmx56 \
 	linksys_whw03 \
 	meraki_mr30h \
+	meraki_underdog \
 	meraki_z3 \
 	netgear_lbr20 \
 	netgear_rax120v2 \
@@ -105,6 +107,7 @@ ALLWIFIBOARDS:= \
 	zte_mf287plus \
 	zyxel_nbg7815 \
 	zyxel_nwa210ax \
+	zyxel_scr50axe \
 	anysafe_e1 \
 	cmiot_ax18 \
 	jdcloud_re-cs-02 \
@@ -248,10 +251,12 @@ $(eval $(call generate-ipq-wifi-package,linksys_mx2000,Linksys MX2000))
 $(eval $(call generate-ipq-wifi-package,linksys_mx4200,Linksys MX4200))
 $(eval $(call generate-ipq-wifi-package,linksys_mx5300,Linksys MX5300))
 $(eval $(call generate-ipq-wifi-package,linksys_mx5500,Linksys MX5500))
+$(eval $(call generate-ipq-wifi-package,linksys_mx6200,Linksys MX6200))
 $(eval $(call generate-ipq-wifi-package,linksys_mx8500,Linksys MX8500))
 $(eval $(call generate-ipq-wifi-package,linksys_spnmx56,Linksys SPNMX56))
 $(eval $(call generate-ipq-wifi-package,linksys_whw03,Linksys WHW03))
 $(eval $(call generate-ipq-wifi-package,meraki_mr30h,Meraki MR30H))
+$(eval $(call generate-ipq-wifi-package,meraki_underdog,Meraki underdog))
 $(eval $(call generate-ipq-wifi-package,meraki_z3,Meraki Z3))
 $(eval $(call generate-ipq-wifi-package,netgear_lbr20,Netgear LBR20))
 $(eval $(call generate-ipq-wifi-package,netgear_rax120v2,Netgear RAX120v2))
@@ -298,6 +303,7 @@ $(eval $(call generate-ipq-wifi-package,zte_mf287,ZTE MF287))
 $(eval $(call generate-ipq-wifi-package,zte_mf287plus,ZTE MF287Plus))
 $(eval $(call generate-ipq-wifi-package,zyxel_nbg7815,Zyxel NBG7815))
 $(eval $(call generate-ipq-wifi-package,zyxel_nwa210ax,Zyxel NWA210AX))
+$(eval $(call generate-ipq-wifi-package,zyxel_scr50axe,Zyxel SCR50AXE))
 $(eval $(call generate-ipq-wifi-package,anysafe_e1,AnySafe E1))
 $(eval $(call generate-ipq-wifi-package,cmiot_ax18,CMIOT AX18))
 $(eval $(call generate-ipq-wifi-package,jdcloud_re-cs-02,JDCloud RE-CS-02))
